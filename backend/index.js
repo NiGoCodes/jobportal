@@ -10,8 +10,13 @@ import jobRoute from "./routes/job.route.js";
 import applicationRoute from "./routes/application.route.js";
 import path from "path";
 
+<<<<<<< HEAD
 dotenv.config({ path: path.resolve("./backend/.env") });
 connectDB();
+=======
+dotenv.config({});
+// connectDB();
+>>>>>>> 93c91c0d43474aeaba7250f0811b70ebf112e835
 const PORT = process.env.PORT || 8000;
 const app = express();
 
@@ -46,5 +51,9 @@ app.get('*' , (_,res)=>{
 app.listen(PORT,()=>{
     connectDB();
     console.log(`Server running at port ${PORT}`);
+<<<<<<< HEAD
 })
 
+=======
+})
+>>>>>>> 93c91c0d43474aeaba7250f0811b70ebf112e835

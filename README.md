@@ -35,7 +35,8 @@ jobportal-main/
 │   ├── models/              # Mongoose models (User, Job, Company, Application)
 │   ├── routes/              # Express route definitions
 │   ├── utils/               # Utility functions (Cloudinary, DB connection)
-│   └── index.js             # Entry point for backend server
+│   ├── index.js             # Entry point for backend server
+│   └── package.json         # Backend dependencies and scripts
 ├── frontend/
 │   ├── src/
 │   │   ├── components/      # React components (UI, pages, admin, auth)
@@ -44,8 +45,8 @@ jobportal-main/
 │   │   ├── utils/           # Frontend utility functions/constants
 │   │   └── ...
 │   ├── public/              # Static assets
+│   ├── package.json         # Frontend dependencies and scripts
 │   └── ...
-├── package.json             # Project metadata and scripts
 └── README.md                # Project documentation
 ```
 
@@ -102,11 +103,12 @@ jobportal-main/
 
 ## Scripts
 
-### Backend
+### Backend (`backend/package.json`)
 - `npm start` — Start the Express server
 - `npm run dev` — Start server with nodemon (if configured)
+- `npm run build` — Install all dependencies and build frontend (if needed)
 
-### Frontend
+### Frontend (`frontend/package.json`)
 - `npm run dev` — Start Vite development server
 - `npm run build` — Build for production
 - `npm run preview` — Preview production build
